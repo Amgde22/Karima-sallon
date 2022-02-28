@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+/* (dark)  pink 1 
+   (light) pink 2 #F993B1 
+   light bauge rgb(255, 255, 255) */
+body {
+    margin: 0px;
+    background-color: #F65992;
+    background-image: url("/potential_logos/bcg.png");
+    background-size: 20px;
+    background-repeat: round;
+   
+}
+div.head {
+    display: block;
+    width: 100%;
+    height: 0.5cm;
+    background-color: #999;
+}
+header {
+    margin: 0px;
+    height: 259px;
+    text-align:center;
+    background-color: rgb(38, 20, 44);
+    color: #F65992;
+    /* background-image: url(/potential_logos/salon.jpg); */
+    background-size:contain;
+    
+}
+
+ul.logo {
+    
+    list-style-type: none;
+    margin: 0px;
+    
+
+}
+ul.logo li {
+    display: inline-block;
+    position: relative;
+    left: -5%;
+ 
+    
+}
+h1 {
+    margin: 0px;
+    /* background-color: white; */
+    font-family: Italianno;
+    font-size: 87px;
+    text-align: center;
+    font-weight: 500;
+    /* border: 3px solid black; */
+  
+    
+    
+}
+img.logo {
+        margin-right: 15px;
+        background-color: pink;
+        position: relative;
+        top: 43px;
+        height :120px;
+        border-radius: 10px;
+}
+
+.content {
+    
+    margin: auto;
+    position: relative;
+    top: -20px;
+    width: 80%;
+    height:min-content;
+    min-width: 80%;
+    min-height: 300px;
+    background-color:white;
+    box-shadow: 9px 9px black;
+    overflow: scroll;
+   
+} 
+a {
+    text-decoration: none;
+    color: #F65992;
+}
+
+/* makeup */
+.makeup {
+    position: relative;
+    top: 20px;
+    
+    border: 5px solid black;
+    border-radius: 20px;
+    width:60%;
+    height: min-content;
+    text-align: center;
+    background-color: #F65992 ;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align:center;
+
+}
+.makeup img {
+    border-bottom :3px solid black;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.makeup figcaption {
+    padding: 5px;
+    font-weight: 500;
+    font-size:x-large;
+    position: relative;
+    top: -1px;
+    color:rgb(255, 255, 255) ;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  
+}
+
+.showcase {
+    text-align: center;
+    margin: 20px;
+}
+.showcase img {
+    border-radius: 50px;
+    border: 4px solid red;
+
+
+
+}
