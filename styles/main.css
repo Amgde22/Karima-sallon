@@ -6,22 +6,17 @@
 body {
     margin: 0px;
     background-color: #F65992;
-    background-image: url("/potential_logos/bcg.png");
+    background-image: url("../potential_logos/bcg.png");
     background-size: 20px;
     background-repeat: round;
    
 }
-div.head {
-    display: block;
-    width: 100%;
-    height: 0.5cm;
-    background-color: #999;
-}
+
 header {
     margin: 0px;
-    height: 259px;
+    min-height: 220px;
     text-align:center;
-    background-color: rgb(38, 20, 44);
+    background-color: rgb(46, 29, 51);
     color: #F65992;
     /* background-image: url(/potential_logos/salon.jpg); */
     background-size:contain;
@@ -46,16 +41,19 @@ h1 {
     margin: 0px;
     /* background-color: white; */
     font-family: Italianno;
-    font-size: 87px;
+    font-size: 55px;
     text-align: center;
-    font-weight: 500;
-    /* border: 3px solid black; */
-  
-    
-    
+    font-weight: 0 ;
+    /* border: 3px solid black; */  
+}
+@media only screen and (max-width: 329px) {
+
+    h1 {
+        font-size: 40px;
+    }
 }
 img.logo {
-        margin-right: 15px;
+        margin-right: 10px;
         background-color: pink;
         position: relative;
         top: 43px;
@@ -70,11 +68,11 @@ img.logo {
     top: -20px;
     width: 80%;
     height:min-content;
-    min-width: 80%;
+    max-width: 700px;
     min-height: 300px;
     background-color:white;
     box-shadow: 9px 9px black;
-    overflow: scroll;
+    overflow: hidden;
    
 } 
 a {
@@ -89,7 +87,7 @@ a {
     
     border: 5px solid black;
     border-radius: 20px;
-    width:60%;
+    width:75%;
     height: min-content;
     text-align: center;
     background-color: #F65992 ;
@@ -121,11 +119,92 @@ a {
 .showcase {
     text-align: center;
     margin: 20px;
+   transition: transform 0.7s ease-out;
+   /* transform: translateX(-50vh); */
 }
 .showcase img {
-    border-radius: 50px;
-    border: 4px solid red;
+    border-radius: 25px;
+    border: 3px solid red;
+    width: 100%;
+    max-width: 500px;
+}
 
+.showcase.slideright {
+    transform: translateX(-100vw);
+    
 
+}
+.showcase.slideleft {
+    transform: translateX(100vw);
 
+}
+
+.showcase.gomiddle{
+    transform: translateX(0px);
+}
+/*             DARK MODE BUTTON                  */
+
+div.Navcontainer {
+    border: 5px solid rgb(10, 218, 233);
+    height: 100px;
+    position: relative;
+   
+}
+div.Navcontainer ul {
+    display: flex;
+    
+    
+
+}
+div.Navcontainer ul li {
+    display: block;
+    margin: 10px;
+    
+}
+div.Navcontainer div {
+    border-radius: 10px;
+    width: 50px;
+    height: 20px;
+    border: 3px solid gray ;
+    text-align: initial;
+    background-color: white;
+   
+
+    position: absolute;
+    right: 0;
+    top: 25%;
+
+    transition: background-color 150ms ease-in 
+                ;
+}
+div.Navcontainer div.dark {
+    background-color: black;
+}
+div.Navcontainer div span {
+   color: black;
+    display: block;
+    position: absolute;
+    
+    left: 0;
+    
+    bottom: 0;
+
+    transition: transform 500ms ease-in ,
+                color 500ms ease-in;
+    transform: translateX(0px);
+   
+}
+div.Navcontainer div span.dark {
+    color: white;
+    transform: translateX(30px);
+}
+body.dark {
+    background-color: rgb(2, 0, 0);
+}
+#content.dark {
+    background-color: rgb(68, 62, 62);
+}
+.makeup.dark {
+    border: 5px solid rgb(255, 255, 255);
+    
 }
